@@ -1,0 +1,15 @@
+<template>
+  <div class="slds-card slds-p-around_medium">
+    <div class="slds-text-heading_large">Toggle Form</div>
+    <p class="slds-p-top_small">An simple example of using events to toggle simple active/inactive UI state.</p>
+    <div class="slds-p-top_medium">
+      <div class="slds-text-color_success" if:true={isActive}>Active</div>
+      <div class="slds-text-color_default" if:false={isActive}>Not Active</div>
+    </div>
+    <div class="slds-p-top_medium">
+      <button class={buttonClasses} onclick={handleClick}>
+        {buttonText}
+      </button>
+    </div>
+  </div>
+</template>
